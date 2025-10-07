@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funçao</h1>
+
+    <input type="number" id="number" value="1">
+    <button onclick="mostrarTaboada()">Mostrar taboada</button>
+    <button onclick="limparTaboada()">Limpar Taboada</button>
+    <div id="output"></div>
+
+    <script>
+
+        const input = document.getElementById("number");
+        const output = document.getElementById("output");
+
+        let taboadaHTML = "";
+
+        function mostrarTaboada() {
+            const inputValue = parseFloat(input.value);
+
+            for(let i = 1; i < 100 ; i++) {
+                taboadaHTML += `${i} x ${inputValue} = ${i * inputValue} <br>`;
+            }
+
+            output.innerHTML = taboadaHTML;
+        }
+
+        function limparTaboada() {
+            taboadaHTML = "";
+            output.innerHTML = taboadaHTML;
+        }
+
+        mostrarTaboada();
+    </script>
+</body>
+</html>

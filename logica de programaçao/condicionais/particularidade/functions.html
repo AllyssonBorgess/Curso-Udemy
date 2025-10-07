@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+
+    <script>
+        // Function Declaration
+        function ola1(nome) {
+            console.log("Ola de function declaration, " + nome);
+        }
+
+        // Function Expression
+        const ola2 = function(nome) {
+            console.log("Ola de function expression, " + nome);
+        };
+
+        // Arrow Function
+        const arr = [ola1, ola2, function(){console.log("funçao anonima de array executada")}];
+
+        // Using the functions
+        console.log(greet("Alice")); // Output: Hello, Alice!
+        console.log(farewell("Bob")); // Output: Goodbye, Bob!
+        console.log(add(5, 3)); // Output: 8
+    </script>
+</body>
+</html>

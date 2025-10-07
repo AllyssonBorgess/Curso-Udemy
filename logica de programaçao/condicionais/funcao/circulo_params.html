@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funçao area do triangulo</title>
+</head>
+<body>
+    <h1>Funçao area do circulo</h1>
+    <label>raio
+        <input type="number" id="base">
+    </label>
+    <button onclick="mostrarAreaDoPrompt()">Calcular a area do prompt</button>
+    <button onclick="mostrarAreaDoInput()">Calcular a area do input</button>
+    <br>
+    <output id="output"></output>
+
+    <script>
+        const raio = document.getElementById("raio")
+        const output = document.getElementById("output")
+
+        function mostrarAreaDoPrompt() {
+            let raioValue = parseFloat(prompt("Digite o valor do raio: "));
+            const pi = Math.PI;
+            let area = pi * raioValue * raioValue ;
+
+            output.innerHTML = `A area do circulo é: ${raioValue} é ${area}`;
+        }
+
+        function mostrarAreaDoInput() {
+            let raioValue = raio.value;
+            const pi = Math.PI;
+            let area = pi * raioValue * raioValue ;
+
+            output.innerHTML = `A area do circulo é: ${raioValue} é ${area}`;
+        }
+    </script>
+</body>
+</html>

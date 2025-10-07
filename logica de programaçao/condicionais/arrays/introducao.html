@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+        
+
+        let nomes = ["João", "Maria", "Pedro", "Ana"];// Sintaxe literal
+        //let nomes = new Array("joao", "Maria", "Pedro", "Ana"); // Sintaxe construtor
+
+        let nome = prompt("Digite seu nome:");
+
+        nomes[nomes.length] = nome; // Adiciona o nome ao final do array
+
+        for(let i = 0; i < 4; i++) {
+            document.write("nome: " + nomes[i] + "<br>");
+        }
+
+        document.write("A lista de nomes possui " + nomes.length + " Elementos");
+        
+    </script>
+
+</body>
+</html>

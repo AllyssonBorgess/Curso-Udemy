@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Taboada</title>
+</head>
+<body>
+    <h1>Loops Taboada</h1>
+    <script>
+
+        let n = parseFloat(prompt("Digite um número: "));
+        
+        if(!isNaN(n)) {
+            let contador = 0
+
+             // enquando (contador <= 1000)
+        while(contador <= 1000) {
+            document.write(n + " x "+ contador +": " + n * contador + "<br>");
+            contador++
+        }
+
+        document.write("saiu do loop");
+        } else {
+            alert("DIgite apenas numero")
+        }
+        
+    </script>
+</body>
+</html>

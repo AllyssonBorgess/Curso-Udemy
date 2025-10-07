@@ -1,0 +1,1 @@
+document.getElementById("titulo").textContent = "Titulo alterado via DOM";

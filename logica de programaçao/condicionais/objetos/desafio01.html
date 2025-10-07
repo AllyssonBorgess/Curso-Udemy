@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1>Objetos</h1>
+
+    <script>
+
+       
+        const carro = {
+            modelo: "uno",
+            ano: 2020,
+            cor: "preto",
+            km: 15000,
+            combustivel: "gasolina",
+            litrosConsumidos: 625,
+        }
+
+        carro.marca = "Fiat";
+
+        document.write(` O carro ${carro.marca} ${carro.modelo} é do ano ${carro.ano}, tem a cor ${carro.cor}, faz em media ${carro.km / carro.litrosConsumidos} km, utiliza ${carro.combustivel} e consumiu ${carro.litrosConsumidos} litros de combustível.<br>`);
+    </script>
+</body>
+</html>

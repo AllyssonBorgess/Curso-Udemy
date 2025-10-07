@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos Primitivos</title>
+</head>
+<body>
+    <h1>Tipos Primitivos</h1>
+
+    <p>Em JS, ha 2 tipos de dados possiveis .. primitivos(passado por valores) e objetos(passados por referencia)</p>
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Undefined</li>
+        <li>Null</li>
+        <li>Symbol</li>
+    </ul>
+
+    <script>
+
+        let n = 10;
+
+       function teste(n) {
+            console.log(++n)
+        }
+
+        teste(n);
+
+        console.log("n externo da funcao: ", n);
+
+        const arr = [1, 2, 3];
+
+        function adicionarNoArray(valor, arr) {
+            arr[arr.length] = valor;
+        }
+
+        adicionarNoArray(4, arr);
+        console.log("Array antes da funcao: ", arr);
+        
+    </script>
+</body>
+</html>

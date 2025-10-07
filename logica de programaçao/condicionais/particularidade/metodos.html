@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos</title>
+</head>
+<body>
+    <h1>Metodos</h1>
+
+    <script>
+
+        const produto = {
+            nome: "Caneta",
+            preco: 10,
+            comprar: function(qnt) {
+                if (qtd > this.quantidade) {
+                    console.log(`Não temos ${qnt} unidades de ${this.nome} em estoque`);
+                    return;
+                }
+                console.log(`Comprar caneta`)
+                this.quantidade -= qnt;
+
+            }
+        }
+
+        console.log(produto);
+
+        // Comprar 3 canetas
+        produto.quantidade -= 3;
+
+        console.log(produto);
+
+        //Comprar 14 canetas
+        produto.quantidade = 14;
+        console.log(produto);
+
+        produto.quantidade = 10;
+
+        produto.comprar(3);
+
+    </script>
+</body>
+</html>
